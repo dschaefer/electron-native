@@ -9,7 +9,9 @@ On the Electron side, this module is require'd by both the main process, that pr
 and the renderer process which injects the results into the page.
 
 We're using CMake here because it's just a better build system than node-gyp and we're planning on using
-libraries that have CMake fragments.
+libraries that have CMake fragments. To fit it nicely into the npm build script, I've written a simple
+cmake.js node script that emulates what CDT does, by running CMake only the first time and allowing the
+builder to run it again as necessary.
 
 Also, this is a bit of an introduction to C++11 for me. I'm using healthy doses of auto typing
 and we send lambda's to the work queue. It makes the code much easier to read and understand.

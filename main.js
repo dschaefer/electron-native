@@ -2,7 +2,6 @@ const calculator = require('./lib/calculator');
 
 calculator.add(1, 86).then((value) => {
 	console.log(value);
-	throw "Yikes";
 });
 
 const electron = require('electron')

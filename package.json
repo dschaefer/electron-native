@@ -1,0 +1,18 @@
+{
+  "name": "native-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "node cmake.js build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "1.6",
+    "electron-rebuild": "^1.5.7",
+    "mkdirp": "^0.5.1"
+  }
+}

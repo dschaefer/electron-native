@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "node cmake.js build",
+    "build": "node cmake.js build/default",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
